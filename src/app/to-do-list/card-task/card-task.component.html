@@ -1,0 +1,23 @@
+<div class="task">
+    <ul>
+        <li [ngClass]="{'strike': taskChecked === true }">
+            <button class="done" (click) = "onCheck()" *ngIf= "taskChecked === false" ></button>
+            <img src="../assets/icons/check.svg" class="check" *ngIf =" taskChecked "> 
+            {{newTask}} 
+            <img src="../assets/icons/trash-icon.svg" class="delete"(click)="onDelete(taskIndex)">
+            <img src="../assets/icons/edit-icon.svg" class="edit" *ngIf= "taskChecked === false" (click)="onEdit()">
+        </li>
+
+    </ul>
+
+    <div class="add-task">
+        <form>
+            <div *ngIf = "editClicked">
+                <input type="text"  class="newTask" [(ngModel)] = "newTask" (ngModelChange)="onChange($event)" name="taskOnEdit" > 
+                <button class="addTask" (click) = "saveEdited()">Save</button>
+               </div>
+        </form>
+    </div>
+
+</div>
+

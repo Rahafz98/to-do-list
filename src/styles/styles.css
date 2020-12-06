@@ -1,0 +1,204 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+* {
+  font-family: 'Baloo 2', cursive;
+}
+
+body {
+  background-color: #F0EFE9;
+}
+
+.container {
+  border-radius: 1%;
+  color: #575A6A;
+  background-color: white;
+  max-width: 48vh;
+  margin: auto;
+  position: relative;
+  top: 10vh;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(219, 217, 217, 0.918);
+          box-shadow: 0 8px 16px 0 rgba(219, 217, 217, 0.918);
+}
+
+.noTask {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: medium;
+}
+
+.add-task {
+  text-align: center;
+}
+
+.newTask {
+  font-size: small;
+  margin: auto;
+  border-radius: 4px;
+  border: solid #DCDCDC;
+}
+
+input:focus {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(209, 208, 208, 0.918);
+          box-shadow: 0 8px 16px 0 rgba(209, 208, 208, 0.918);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  border: solid #D0D2D9;
+  outline: none;
+}
+
+.addTask {
+  margin-left: 2px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border: none;
+  height: 27px;
+  color: #575A6A;
+  background-color: #50E3A4;
+}
+
+.add {
+  max-width: 18px;
+  margin: auto;
+}
+
+.add-container {
+  position: inherit;
+  top: 25px;
+}
+
+.addBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #50E3A4;
+  margin: auto;
+}
+
+.date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  top: 11px;
+  text-align: center;
+}
+
+.number {
+  position: relative;
+  left: 29px;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.month {
+  font-weight: 600;
+  font-size: small;
+  position: relative;
+  top: 28px;
+  left: 25px;
+  margin-left: 8px;
+}
+
+.year {
+  font-size: small;
+  position: relative;
+  top: 40px;
+  left: -6px;
+  margin-left: 6px;
+}
+
+.day {
+  float: right;
+  font-size: small;
+  margin: auto;
+  padding-left: 70px;
+}
+
+li {
+  display: block;
+  list-style: none;
+  margin-left: -13px;
+  text-align: left;
+  font-size: 15px;
+}
+
+ul:hover {
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(219, 217, 217, 0.952);
+          box-shadow: 2px 2px 4px 0 rgba(219, 217, 217, 0.952);
+  border-radius: 4px;
+}
+
+@-webkit-keyframes strike {
+  from {
+    -webkit-text-decoration-color: transparent;
+            text-decoration-color: transparent;
+  }
+  to {
+    -webkit-text-decoration-color: auto;
+            text-decoration-color: auto;
+  }
+}
+
+@keyframes strike {
+  from {
+    -webkit-text-decoration-color: transparent;
+            text-decoration-color: transparent;
+  }
+  to {
+    -webkit-text-decoration-color: auto;
+            text-decoration-color: auto;
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+  -webkit-animation: strike 0.6s linear;
+          animation: strike 0.6s linear;
+  color: #A9A9A9;
+}
+
+.check {
+  top: 0.7vh;
+  height: 19px;
+  width: 19px;
+  float: left;
+  margin: 3px;
+}
+
+.done {
+  border-radius: 50%;
+  border: solid #e9e7e7;
+  height: 18.8px;
+  width: 18.8px;
+  float: left;
+  margin: 3px;
+}
+
+.delete {
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin: 2px 3px 2px 2px;
+  padding-right: 20px;
+}
+
+.edit {
+  margin: 2px;
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+/*# sourceMappingURL=styles.css.map */

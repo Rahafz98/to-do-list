@@ -1,0 +1,71 @@
+@import '_colors';
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.container{
+    border-radius: 1%;
+    color: $primary-color;
+    background-color: white;
+    max-width: 48vh;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    box-shadow: 0 8px 16px 0 rgba(219, 217, 217, 0.918);
+
+}
+.noTask{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: medium;
+}
+
+.add-task{
+    text-align:center; 
+}
+
+
+.newTask{
+    font-size: small;
+    margin: auto;
+    border-radius: 4px;
+    border: solid #DCDCDC	;
+
+}
+
+input:focus{
+    box-shadow: 0 8px 16px 0 rgba(209, 208, 208, 0.918);
+    transition: box-shadow 0.3s ease-in-out;
+    border: solid $light-gray;
+    outline: none;
+}
+.addTask{
+    margin-left: 2px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    border: none;
+    height: 27px;
+    color: $primary-color;
+    background-color: $secondary-color;
+
+}
+.add{
+    max-width: 18px;
+    margin: auto;}
+
+.add-container{
+
+    position: inherit;
+    top: 25px;
+
+}
+.addBtn{
+    display: flex;
+    align-items: center;
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: $secondary-color;
+    margin: auto;}
+

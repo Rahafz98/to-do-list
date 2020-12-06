@@ -1,0 +1,27 @@
+<div class="container">
+
+    <app-card-date></app-card-date>
+    <app-card-task *ngFor = "let task of tasks; let i = index" [newTask]= "task.content"
+    [taskIndex] = "i" 
+    [taskChecked] = "task.isChecked"
+    (checked) = "checkTask($event,task,i)"
+    (delete)="deleteTask($event,task)"
+    (edit)= "editTask($event,task, i)">   </app-card-task>
+
+    <p *ngIf = "tasks.length == 0" class="noTask">There isn't any task to complete!</p>
+    <div class="add-task" >
+         <form>
+            <div *ngIf = "showField">
+             <input type="text" placeholder="Write a new task" class="newTask" #taskContent> 
+             <button class="addTask" (click) = "addTask()" >Add</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="add-container">
+     <button class="addBtn" (click) = "showField = true">
+        <img src="../assets/icons/plus-icon.svg" alt="add button" class="add">
+     </button>
+    </div>
+</div>
+

@@ -1,0 +1,50 @@
+
+li{
+    display: block;
+    list-style: none;
+    margin-left: -13px;
+    text-align: left;
+    font-size: 15px;}
+
+ul:hover{
+    background-color: #f7f7f7;
+    box-shadow: 2px 2px 4px 0 rgba(219, 217, 217, 0.952);
+    border-radius: 4px;}
+
+@keyframes strike {
+    from { text-decoration-color: transparent; }
+    to { text-decoration-color: auto; }}
+  .strike {  
+    text-decoration: line-through;
+    animation: strike 0.6s linear;
+    color:#A9A9A9	}
+
+
+.check{
+    top: 0.7vh;
+    height: 19px; 
+    width: 19px;
+    float: left;
+    margin: 3px; }
+
+.done{
+    border-radius: 50%;
+    border: solid rgb(233, 231, 231);
+    height: 18.8px; 
+    width: 18.8px; 
+    float: left;
+    margin: 3px;}
+
+.delete{
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin: 2px 3px 2px 2px;
+    padding-right: 20px;}
+
+
+.edit{
+    margin: 2px;
+    height: 20px;
+    width: 20px;
+    float: right;}
